@@ -38,6 +38,7 @@
             this.tlbZoomIn = new System.Windows.Forms.ToolStripButton();
             this.tlbZoomOut = new System.Windows.Forms.ToolStripButton();
             this.tlbPan = new System.Windows.Forms.ToolStripButton();
+            this.tlbIdentify = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -77,7 +78,8 @@
             this.tlbGlobal,
             this.tlbZoomIn,
             this.tlbZoomOut,
-            this.tlbPan});
+            this.tlbPan,
+            this.tlbIdentify});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(894, 25);
@@ -139,6 +141,17 @@
             this.tlbPan.ToolTipText = "漫游";
             this.tlbPan.Click += new System.EventHandler(this.tlbPan_Click);
             // 
+            // tlbIdentify
+            // 
+            this.tlbIdentify.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlbIdentify.Image = ((System.Drawing.Image)(resources.GetObject("tlbIdentify.Image")));
+            this.tlbIdentify.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlbIdentify.Name = "tlbIdentify";
+            this.tlbIdentify.Size = new System.Drawing.Size(23, 22);
+            this.tlbIdentify.Text = "toolStripButton1";
+            this.tlbIdentify.ToolTipText = "属性查询";
+            this.tlbIdentify.Click += new System.EventHandler(this.tlbIdentify_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -172,6 +185,7 @@
         private System.Windows.Forms.ToolStripButton tlbZoomIn;
         private System.Windows.Forms.ToolStripButton tlbZoomOut;
         private System.Windows.Forms.ToolStripButton tlbPan;
+        private System.Windows.Forms.ToolStripButton tlbIdentify;
     }
 }
 
